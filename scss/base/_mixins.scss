@@ -1,0 +1,23 @@
+// Mixin para sombras
+@mixin box-shadow($x: 0px, $y: 1px, $blur: 10px, $color: $base-color) {
+    box-shadow: $x $y $blur $color;
+  }
+  
+  // Mixin para media queries
+  @mixin respond($size) {
+    @if $size == large {
+      @media (max-width: 1440px) {
+        @content;
+      }
+    }
+    @else if $size == medium {
+      @media (max-width: 1024px) {
+        @content;
+      }
+    }
+    @else if $size == small {
+      @media (max-width: 768px) {
+        @content;
+      }
+    }
+  }

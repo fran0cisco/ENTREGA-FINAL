@@ -1,0 +1,19 @@
+@import "variables";
+
+.hero__inicio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% repeat(3, 1fr) 20%;
+  grid-template-areas: 
+    "header header header header header" 
+    "main main main main main" 
+    ". nosotros nosotros nosotros ." 
+    "footer footer footer footer footer";
+}
+
+.img__inicio {
+  background-image: url("../../assets/images/inicio.png");
+  height: 60rem;
+}
+
+  

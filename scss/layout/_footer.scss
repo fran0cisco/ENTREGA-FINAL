@@ -1,0 +1,31 @@
+@use '../utilities/variables' as *;
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #594632;
+    color: #fff;
+}
+
+.redesSociales {
+    gap: 20px;
+    display: flex;
+    color: white;
+    margin-top: 20px;
+}
+.redesSociales img {
+    max-width: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px 0px;
+    font-size: 1.5rem;
+    text-align: center;
+}

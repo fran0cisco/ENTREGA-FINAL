@@ -1,0 +1,22 @@
+@import "variables";
+
+.nosotros {
+  grid-area: nosotros;
+
+  h2 {
+    color: $secondary-color;
+    font-size: 3.5rem;
+    background-color: $base-color;
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 2rem 0;
+    
+    strong {
+      color: $base-color;
+    }
+  }
+}

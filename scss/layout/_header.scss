@@ -1,0 +1,82 @@
+@use '../utilities/variables' as *;
+
+.hero__inicio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% repeat(3, 1fr) 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header header" "main main main main main" ". nosotros nosotros nosotros ." "footer footer footer footer footer";
+    justify-content: initial;
+    align-items: initial;
+}
+
+
+
+header {
+    grid-area: header;
+    height: 60px;
+    background-color: #dec8a9;
+    box-shadow: 0px 1px 10px #594632;
+    /**/
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /**/
+    top: 0px;
+    z-index: 99;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+header nav {
+    height: 40px;
+    /**/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: initial;
+    /**/
+    font-size: 1.5rem;
+}
+
+header .nav-mobile {
+    display: none;
+}
+
+header ul {
+    /**/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /**/
+    list-style: none;
+    padding: 5px;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: #594632;
+}
+
+header ul li a:hover {
+    background-color: #bba482;
+    color: #594632;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo {
+    max-width: 45px;
+}
+
+main {
+    grid-area: main;
+}

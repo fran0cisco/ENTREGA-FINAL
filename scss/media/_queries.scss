@@ -1,0 +1,23 @@
+@import "mixins";
+
+.hero__inicio {
+  @include respond(large) {
+    grid-template-columns: 10% repeat(3, 1fr) 10%;
+  }
+}
+
+header {
+  @include respond(medium) {
+    padding: 0 5%;
+  }
+}
+
+.nav {
+  @include respond(medium) {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex !important;
+  }
+}
